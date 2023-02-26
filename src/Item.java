@@ -1,11 +1,13 @@
-public class Article {
+public class Item {
+    private static Integer counter = 0;
     private Integer code ;
     private Double price;
 
-    public Article(Integer code, Double price) {
-        this.code = code;
+    public Item(Double price) {
+        this.code = ++counter;
         this.price = price;
     }
+
 
     public Integer getCode() {
         return code;
@@ -25,12 +27,12 @@ public class Article {
 
     @Override
     public String toString() {
-        return "Article{" + "\n" +
+        return "Item{" + "\n" +
                 "   code=" + code + "\n" +
                 "   price=" + price + "$\n" +
                 '}';
     }
-    public Object priceArticle(){
+    public Object itemPrice(){
         return getPrice();
     }
 }

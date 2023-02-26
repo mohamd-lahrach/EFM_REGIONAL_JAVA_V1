@@ -1,40 +1,50 @@
-Article{
+Item{
    code=1
    price=12121.2$
 }
-Article{
-   code=4
+Item{
+   code=2
    price=1000.0$
 }
-Article{
-   code=5
+Item{
+   code=3
    price=199.0$
 }
-Article{
-   code=8
+Item{
+   code=4
    price=399.99$
 }
-ArticleEnSolde{
-   code=3
-   price=300.0$
-   priceArticleEnSolde=105.0$
-   remise=65.0%
+ItemOnDiscount{
+   code=5
+   price=200.0$
+   priceItemOnDiscount=180.0$
+   discount=10.0%
 }
-ArticleEnSolde{
+ItemOnDiscount{
    code=6
-   price=589.99$
-   priceArticleEnSolde=294.995$
-   remise=50.0%
+   price=300.0$
+   priceItemOnDiscount=105.0$
+   discount=65.0%
 }
-ArticleEnSolde{
+ItemOnDiscount{
    code=7
-   price=99.99$
-   priceArticleEnSolde=90.000999$
-   remise=9.99%
+   price=589.99$
+   priceItemOnDiscount=294.995$
+   discount=50.0%
 }
-ArticleEnSolde{
+ItemOnDiscount{
+   code=8
+   price=99.99$
+   priceItemOnDiscount=90.000999$
+   discount=9.99%
+}
+ItemOnDiscount{
    code=9
    price=100.0$
-   priceArticleEnSolde= 95.0% Is Invalid, 0%<=remise<=90%
-   remise=95.0%
+   priceItemOnDiscount=95.0% Is Invalid, discount must be 0%<=discount<=90%
+   discount=95.0%
+}
+Item{
+   code=10
+   price=499.99$
 }
